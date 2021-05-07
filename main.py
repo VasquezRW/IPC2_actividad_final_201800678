@@ -36,6 +36,7 @@ turno = 1
 
 # para metodos clicked se asigna el simbolo correcto y se cambia de turno
 
+
 def clicked1():
     global turno
     if btn1["text"] == " ":
@@ -195,7 +196,6 @@ def win(jugador):
     elif jugador == "O":
         resultado = "Juego terminado, gana jugador 2 ! "
     messagebox.showinfo("Felicitaciones", resultado)
-    window.destroy()
 
 
 btn1 = Button(window, text=" ", width=3, height=1, command=clicked1)
